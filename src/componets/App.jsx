@@ -3,6 +3,14 @@ import Nav from './Nav.jsx'
 import Link from './Link.jsx'
 import List from './List.jsx'
 import Item from './Item.jsx'
+import Box from './Box.jsx'
+import Button from './Button.jsx'
+import Drawer from './Drawer.jsx'
+import Heading from './Heading.jsx'
+import Image from './Image.jsx'
+import Main from './Main.jsx'
+import Paragraph from './Paragraph.jsx'
+import Section from './Section.jsx'
 function App() {
   return (
     <>
@@ -60,6 +68,39 @@ function App() {
           </List>
         </Nav>
       </Header>
+      <Main>
+        <Section 
+          corFundo='bg-black'
+          corTexto='text-white'
+          altura='h-[37.5rem]'
+          espacamento='px-50'
+          modeloCaixa='flex'
+        >
+          <Box
+            largura='w-[50%]'
+          >
+            <Heading 
+              tamanhoFonte='text-[4rem]'
+              pesoFonte='font-bold'
+            >
+              Bicicletas feitas sob medida
+              <Drawer 
+               texto='.'
+               corTexto='text-yellow-500'
+              />
+            </Heading>
+            <Paragraph texto='Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.' corTexto='text-gray-500'/>
+            <Button/>
+          </Box>
+          <Box
+            largura='w-[50%]'
+          >
+            <Image
+              fonte='https://www.origamid.com/projetos/bikcraft/img/fotos/introducao.jpg'
+            />
+          </Box>
+        </Section>
+      </Main>
     </>
   )
 }

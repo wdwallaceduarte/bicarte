@@ -15,5 +15,5 @@ export default function Link({
         ${entreLetras}
         ${efeitoSobre}
         `
-    return <a href="" className={style}>{texto}</a>
+    return <a href="#" className={style}>{texto}</a>
 }
