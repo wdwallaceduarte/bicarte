@@ -7,7 +7,7 @@ const style = `
 
   return (
     <>
-      <p>{texto}</p>
+      <p className={style}>{texto}</p>
     </>
   );
 }
